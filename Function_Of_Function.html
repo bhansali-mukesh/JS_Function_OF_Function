@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE> TARANNUM </TITLE>
+<SCRIPT id="pt">
+
+var name = "Pratyutar";
+var SAREER = "return function " + name + "(){ document.getElementById('Yo').innerHTML = 'NAMASKAR'; alert('TAR ZAN');}";
+var Prashn;
+
+function SON()
+{
+	Prashn = new Function(SAREER);
+	//alert(Prashn);
+	//Prashn();
+	//Pratyutar();
+}
+
+function EK_DIN()
+{
+	//Prashn()();
+	Pratyutar();
+}
+
+</SCRIPT>
+
+<BODY ONLOAD="SON();">
+<INPUT TYPE="BUTTON" VALUE=" PATA CHALA " ONCLICK="EK_DIN();" >
+
+<DIV ID="Yo">
+</DIV>
+
+</BODY>
+</HTML>
